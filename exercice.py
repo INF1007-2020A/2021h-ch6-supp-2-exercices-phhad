@@ -8,9 +8,17 @@ import itertools
 
 
 def get_even_keys(dictionary):
-	return {}
+	'''s = set()
+	for k in dictionary.keys():
+		if k% 2 == 0:
+			s.add(k)
+	return s'''
+	return {k for k in dictionary.keys() if k % 2 == 0}
 
 def join_dictionaries(dictionaries):
+	key : value
+	for d in dictionaries:
+		key, value in d.items()
 	return {}
 
 def dictionary_from_lists(keys, values):
